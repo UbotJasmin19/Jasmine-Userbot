@@ -541,7 +541,7 @@ with bot:
                     description="Repository Babymu-Userbot",
                     url="https://t.me/Babymu-Userbot",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**Babymu-Userbot**\n➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Babymu](https://t.me/Xxxyzbabymuuu)\n✣ **Support :** @passcolmekk\n✣ **Repository :** [Babymu-Userbot](https://github.com/Babymu21/Babymu-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Babymu-Userbot**\n➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Babymu](https://t.me/Xxxyzbabymuuu)\n✣ **Support :** @passcolmekk \n✣ **Repository :** [Babymu-Userbot](https://github.com/Babymu21/Babymu-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("𝐺𝑟𝑜𝑢𝑝", "https://t.me/passcolmekk"),
@@ -590,7 +590,7 @@ with bot:
                     description="Babymu-Userbot | Telethon",
                     url="https://t.me/Babymu-Userbot",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**Babymu-Userbot**\n➖➖➖➖➖➖➖➖➖ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖\n**Support:** @passcolmekk\n➖➖➖➖➖➖➖➖",
+                    text=f"**Babymu-Userbot**\n➖➖➖➖➖➖➖➖➖ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖\n**Support:** @passcolmekk \n➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("𝐺𝑟𝑜𝑢𝑝", "https://t.me/passcolmekk"),
