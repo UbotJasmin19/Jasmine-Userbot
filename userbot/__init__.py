@@ -233,7 +233,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "PocongUserbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Babymu-Userbot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "2.3.4")
