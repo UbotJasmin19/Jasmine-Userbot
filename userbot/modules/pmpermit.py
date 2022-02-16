@@ -23,10 +23,10 @@ DEF_UNAPPROVED_MSG = (
     "├ Cht kmu, jangan spam cht\n"
     "├ atau kmu akan otomatis\n"
     "├ terblokir.\n"
-    "└ Bot by **PocongUserbot**\n"
+    "└ Bot by **Babymu-Userbot**\n"
     "┌━━━━━━━━━━━━\n"
-    "├❏ **𝗦𝘂𝗽𝗽𝗼𝗿𝘁: @PocongUserbot**\n"
-    "├❏ **𝗖𝗵𝗮𝗻𝗻𝗲𝗹: @PocongProject**\n"
+    "├❏ **𝗦𝘂𝗽𝗽𝗼𝗿𝘁: @passcolmekk**\n"
+    "├❏ **𝗖𝗵𝗮𝗻𝗻𝗲𝗹: @passcolmekk**\n"
     "└━━━━━━━━━━━━\n"
 )
 
