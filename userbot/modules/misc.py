@@ -111,12 +111,12 @@ async def repeat(event):
 async def repo_is_here(event):
     xx = await edit_or_reply(event, "`Processing...`")
     await xx.edit(
-        f"**Hey**, Saya Menggunakan  **PocongUserbot** \n\n"
+        f"**Hey**, Saya Menggunakan  **Babymu-Userbot** \n\n"
         f"┌❏ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
-        f"├❏ **GroupSupport :** [PocongUserbot](t.me/Poconguserbot)\n"
-        f"├❏ **Channel  :** [PocongProject](t.me/Poocongonlen)\n"
-        f"├❏ **OwnerRepo :** [PocongOnlen](t.me/Pocongonlen)\n"
-        f"└❏ **Repo :** [PocongUserbot](https://github.com/poocong/PocongUserbot)\n"
+        f"├❏ **GroupSupport :** [passcolmekk](t.me/Xxxyzbabymuuu)\n"
+        f"├❏ **Channel  :** [passcolmekk](t.me/passcolmekk)\n"
+        f"├❏ **OwnerRepo :** [Xxxyzbabymuuu](t.me/Pocongonlen)\n"
+        f"└❏ **Repo :** [Babymu](https://github.com/Babymu21/Babymu-Userbot)\n"
     )
 
 
@@ -126,7 +126,7 @@ async def string_is_here(event):
         event,
         "**List Bot**\n"
         "\n┌❏ **GET STRING BOT:**"
-        "\n├❏ [[ KLIK DISINI ]](https://t.me/StringPocongBot)"
+        "\n├❏ [[ KLIK DISINI ]](https://t.me/StringZaenbot)"
         "\n├❏ **GET API ID & API HASH :**"
         "\n└❏ [[ KLIK DISINI ]](https://t.me/pocongscrapbot)",
     )
