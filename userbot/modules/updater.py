@@ -58,7 +58,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if heroku_app is None:
             await event.edit(
                 f"{txt}\n"
-                "**Kredensial Heroku tidak valid untuk deploy PocongUserbot dyno.**"
+                "**Kredensial Heroku tidak valid untuk deploy Babymu-Userbot dyno.**"
             )
             return repo.__del__()
         try:
@@ -89,7 +89,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         await event.edit(
-            "`PocongUserbot Berhasil Di Deploy! Userbot bisa di gunakan kembali.`"
+            "`Babymu-Userbot Berhasil Di Deploy! Userbot bisa di gunakan kembali.`"
         )
 
     else:
