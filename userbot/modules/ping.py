@@ -65,7 +65,7 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await bot.get_me()
     await xx.edit(
-        f"**PONG!!**\n"
+        f"**𝐁𝐀𝐁𝐘𝐌𝐔-𝐔𝐒𝐄𝐑𝐁𝐎𝐓!!**\n"
         f"⚡ **Ping**  `%sms`\n"
         f"⏳ **BotUptime** `{uptime}` \n"
         f"🤖 **BotOf** [{user.first_name}](tg://user?id={user.id})" % (duration)
