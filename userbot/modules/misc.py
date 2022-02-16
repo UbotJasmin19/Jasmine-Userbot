@@ -113,9 +113,9 @@ async def repo_is_here(event):
     await xx.edit(
         f"**Hey**, Saya Menggunakan  **Babymu-Userbot** \n\n"
         f"┌❏ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
-        f"├❏ **GroupSupport :** [passcolmekk](t.me/Xxxyzbabymuuu)\n"
+        f"├❏ **GroupSupport :** [passcolmekk](t.me/passcolmekk \n"
         f"├❏ **Channel  :** [passcolmekk](t.me/passcolmekk)\n"
-        f"├❏ **OwnerRepo :** [Xxxyzbabymuuu](t.me/Pocongonlen)\n"
+        f"├❏ **OwnerRepo :** [Xxxyzbabymuuu](t.me/Xxxyzbabymuuu)\n"
         f"└❏ **Repo :** [Babymu](https://github.com/Babymu21/Babymu-Userbot)\n"
     )
 
