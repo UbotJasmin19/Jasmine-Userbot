@@ -146,8 +146,8 @@ SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
 
 # Support
-GROUP = os.environ.get("GROUP", "PocongUserbot")
-CHANNEL = os.environ.get("CHANNEL", "PocongProject")
+GROUP = os.environ.get("GROUP", "@passcolmekk")
+CHANNEL = os.environ.get("CHANNEL", "@passcolmekk")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -162,11 +162,11 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/poocong/PocongUserbot.git"
+    "UPSTREAM_REPO_URL", "https://github.com/babymu21/Babymu-Userbot.git"
 )
 
 # Custom name sticker pack
-S_PACK_NAME = os.environ.get("S_PACK_NAME", "Tikell @PocongProject")
+S_PACK_NAME = os.environ.get("S_PACK_NAME", "Tikell @passcolmekk")
 
 # SQL Database URI
 DB_URI = os.environ.get("DATABASE_URL", None)
