@@ -1,20 +1,10 @@
-# <p align="center">𝕻𝖔𝖈𝖔𝖓𝖌𝖀𝖘𝖊𝖗𝖇𝖔𝖙</p>
+# <p align="center">𝐁𝐀𝐁𝐘𝐌𝐔-𝐔𝐒𝐄𝐑𝐁𝐎𝐓</p>
 
-<img src="https://telegra.ph/file/0297888edbdc754503e0b.jpg">
+<img src="https://telegra.ph/file/5a8a374e1217b36bba5ca.png">
 </p>
 
-<p align="center">
-    <img alt="POCONG VERSION" src="https://img.shields.io/badge/POCONG%20VERSION-2.3.4-brightgreen"/>
-    <img alt="BUILD IN" src="https://img.shields.io/badge/BUILD%20-Last Day-brightgreen"/>
-           <a href="https://travis-ci.com/poocong/PocongUserbot.svg?branch=main" /></a>
-    <a href="https://github.com/poocong/PocongUserbot/network/members"> <img src="https://img.shields.io/github/forks/poocong/PocongUserbot?logo=github&style=for-the-badge" /></a>
-           <a href="https://app.codacy.com/gh/poocong/PocongUserbot/dashboard"> <img src="https://img.shields.io/codacy/grade/a8f0747a964e4712818a28d2a7f4edd3?color=blue&logo=codacy&style=for-the-badge" alt="Codacy" /></a>
-    <a href="https://github.com/poocong/PocongUserbot"> <img src="https://img.shields.io/github/repo-size/poocong/PocongUserbot?logo=github&style=for-the-badge" /></a>
-    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?label=telethon&logo=pypi&logoColor=white&style=for-the-badge" /></a>
-    <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.0-blue?style=for-the-badge&logo=appveyor"/>
-   </p>
 
-PocongUserbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
+Babymu-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 
 Berbasis [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
 Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.
@@ -28,12 +18,6 @@ mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-
-<p align="center"><a href="https://t.me/Stringpocongbot"><img src="https://img.shields.io/badge/Generate%20String%20Session-blue?style=for-the-flat&logo=telegram" width="210" height"34.45" /></a><p>
-
 <p align="center"><a href="http://deploy.xyren.xyz"> <img 
 src="https://img.shields.io/badge/Deploy%20via%20web%20heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
@@ -43,11 +27,6 @@ src="https://img.shields.io/badge/Deploy%20via%20bot%20heroku-purple?style=flat&
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-<details>
-    <summary> <b>Update and support</b></summary><br/>
-
-* Grup Support [[PocongUserbot]](https://t.me/PocongUserbot)
-* Channel Support [[Poocongonlen]](https://t.me/PocongProject)
 
 
 </details>
