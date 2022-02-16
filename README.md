@@ -18,8 +18,7 @@ mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
 
-<p align="center"><a href="http://deploy.xyren.xyz"> <img 
-src="https://img.shields.io/badge/Deploy%20via%20web%20heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Babymu21/Babymu-Userbot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-Green?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=cG9vY29uZy9Qb2NvbmdVc2VyYm90IG1haW4"> <img 
 src="https://img.shields.io/badge/Deploy%20via%20bot%20heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
