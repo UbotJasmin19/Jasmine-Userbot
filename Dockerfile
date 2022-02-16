@@ -1,6 +1,6 @@
 FROM mrismanaziz/man-userbot:buster
 
-RUN git clone -b main https://github.com/Babymu21/BabymuUserbot /home/babymu-userbot/ \
+RUN git clone -b main https://github.com/Babymu21/Babymu-Userbot /home/babymu-userbot/ \
     && chmod 777 /home/babymu-userbot \
     && mkdir /home/babymu-userbot/bin/
 
