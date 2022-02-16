@@ -233,7 +233,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Babymu-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "PocongUserbot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "2.3.4")
@@ -527,12 +527,12 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@PocongUserbot"):
+            if event.query.user_id == uid and query.startswith("@passcolmekk"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=logoman,
                     link_preview=False,
-                    text=f"**✗ PocongUserbot Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**✗ Babymu-Userbot Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -586,11 +586,11 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title=" PocongUserbot ",
+                    title=" Babymu-Userbot ",
                     description="Babymu-Userbot | Telethon",
                     url="https://t.me/Babymu-Userbot",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**PocongUserBot**\n➖➖➖➖➖➖➖➖➖ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖\n**Support:** @PoocongUserbot\n➖➖➖➖➖➖➖➖",
+                    text=f"**Babymu-Userbot**\n➖➖➖➖➖➖➖➖➖ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖\n**Support:** @passcolmekk\n➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("𝐺𝑟𝑜𝑢𝑝", "https://t.me/passcolmekk"),
