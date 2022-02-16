@@ -161,12 +161,12 @@ async def upstream(event):
 
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if conf == "deploy":
-        await event.edit("`[HEROKU]: Update Deploy PocongUserbot Sedang Dalam Proses...`")
+        await event.edit("`[HEROKU]: Update Deploy 𝐁𝐀𝐁𝐘𝐌𝐔-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 Sedang Dalam Proses...`")
         await deploy(event, repo, ups_rem, ac_br, txt)
         return
 
     if changelog == "" and not force_update:
-        await event.edit("**⚡ PocongUserbot Sudah Versi Terbaru**")
+        await event.edit("**⚡ 𝐁𝐀𝐁𝐘𝐌𝐔-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 Sudah Versi Terbaru**")
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
@@ -204,9 +204,9 @@ CMD_HELP.update(
     {
         "update": f"**Plugin : **`update`\
         \n\n  •  **Syntax :** `{cmd}update`\
-        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru PocongUserbot.\
+        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru 𝐁𝐀𝐁𝐘𝐌𝐔-𝐔𝐒𝐄𝐑𝐁𝐎𝐓.\
         \n\n  •  **Syntax :** `{cmd}update deploy`\
-        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari PocongUserbot.\
+        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari 𝐁𝐀𝐁𝐘𝐌𝐔-𝐔𝐒𝐄𝐑𝐁𝐎𝐓.\
     "
     }
 )
