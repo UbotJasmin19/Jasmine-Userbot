@@ -81,7 +81,7 @@ async def _(event):
 @bot.on(poci_cmd(outgoing=True, pattern=r"so(?: |$)(.*)"))
 async def _(event):
     await event.client.send_message(
-        event.chat_id, "**GAUSAH SOKAB SAMA GUA GOBLOK, LU BABU GA LEVEL!!**"
+        event.chat_id, "**GAUSAH SOKAB SAMA GUA  NGENTOD GOBLOK, LU BABU GA LEVEL!!**"
     )
     await event.delete()
 
