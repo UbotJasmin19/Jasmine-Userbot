@@ -538,7 +538,7 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Babymu-Userbot",
+                    description="Repository 𝐁𝐀𝐁𝐘𝐌𝐔-𝐔𝐒𝐄𝐑𝐁𝐎𝐓",
                     url="https://t.me/Babymu-Userbot",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
                     text="**Babymu-Userbot**\n➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Babymu](https://t.me/Xxxyzbabymuuu)\n✣ **Support :** @passcolmekk\n✣ **Repository :** [Babymu-Userbot](https://github.com/Babymu21/Babymu-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
@@ -587,7 +587,7 @@ with bot:
             else:
                 result = builder.article(
                     title=" Babymu-Userbot ",
-                    description="Babymu-Userbot | Telethon",
+                    description="𝐁𝐀𝐁𝐘𝐌𝐔-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 | Telethon",
                     url="https://t.me/Babymu-Userbot",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
                     text=f"**Babymu-Userbot**\n➖➖➖➖➖➖➖➖➖ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖\n**Support:** @passcolmekk\n➖➖➖➖➖➖➖➖",
@@ -610,7 +610,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**🚀 Babymu-Userbot Inline Menu **\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**🚀 𝐁𝐀𝐁𝐘𝐌𝐔-𝐔𝐒𝐄𝐑𝐁𝐎𝐓  Inline Menu **\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=logoman,
