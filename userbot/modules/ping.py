@@ -16,12 +16,12 @@ from userbot.events import register
 from userbot.utils import edit_or_reply, humanbytes, poci_cmd
 
 absen = [
-    "**Hadir bang** 😁",
+    "**Hadir Cantik** 😁",
     "**Hadir kak** 😉",
     "**Hadir dong** 😁",
-    "**Hadir ganteng** 🥵",
+    "**Hadir Cantik** 🥵",
     "**Hadir bro** 😎",
-    "**Hadir kak maap telat** 🥺",
+    "**Hadir kak Cantik maap telat** 🥺",
 ]
 
 
