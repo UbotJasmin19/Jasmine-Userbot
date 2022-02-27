@@ -4,6 +4,6 @@ RUN git clone -b main https://github.com/Babymu21/Babymu-Userbot /home/Babymu-Us
     && chmod 777 /home/Babymu-Userbot \
     && mkdir /home/Babymu-Userbot/bin/
 
-WORKDIR /home/poconguserbot/
+WORKDIR /home/Babymu-Userbot/
 
 CMD [ "bash", "start" ]
