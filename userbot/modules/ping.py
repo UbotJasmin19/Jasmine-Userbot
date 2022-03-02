@@ -25,7 +25,7 @@ absen = [
 ]
 
 
-Misi = [
+misi = [
     "**Silahkan lewat cantik** 😍",
     "**Kaka cantik mau kemana** 👋🏻",
     "**Monggo kaka cantik ** 🥵",
