@@ -13,7 +13,7 @@ from speedtest import Speedtest
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, StartTime, bot, DEVS
 from userbot.events import register
-from userbot.utils import edit_or_reply, humanbytes, poci_cmd
+from userbot.utils import edit_or_reply, humanbytes, babymu_cmd
 
 absen = [
     "**Hadir Cantik** 😁",
@@ -24,6 +24,19 @@ absen = [
     "**Hadir kak Cantik maap telat** 🥺",
 ]
 
+
+]
+
+Misi = [
+    "**Silahkan lewat cantik** 😍",
+    "**Kaka cantik mau kemana** 👋🏻",
+    "**Monggo kaka cantik ** 🥵",
+    "**Hati hati ya kaka cangik🥰**",
+    "**Silahkan kaka cantik** 🥰",
+    "**Iya kaka cantik lewat aja 😜**",
+    "**Wih kaka cantik mau kemana ni🤭**",
+    
+]
 
 async def get_readable_time(seconds: int) -> str:
     count = 0
