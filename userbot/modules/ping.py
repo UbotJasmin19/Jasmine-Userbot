@@ -61,7 +61,7 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@babymu_cmd(pattern="ping$")
+@poci_cmd(pattern="ping$")
 async def _(ping):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -83,7 +83,7 @@ async def _(ping):
     )
 
 
-@babymu_cmd(pattern="speedtest$")
+@poci_cmd(pattern="speedtest$")
 async def _(speed):
     """For .speedtest command, use SpeedTest to check server speeds."""
     xxnx = await edit_or_reply(speed, "`Running speed test...`")
@@ -115,7 +115,7 @@ async def _(speed):
     )
 
 
-@babymu_cmd(pattern="pong$")
+@poci_cmd(pattern="pong$")
 async def _(pong):
     """For .ping command, ping the userbot from any chat."""
     start = datetime.now()
@@ -134,21 +134,21 @@ async def babymu(ganteng):
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^misi$")
-async def bdrl(ganteng):
+async def babymu(ganteng):
     await ganteng.reply(random.choice(salam))
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.misi$")
-async def bdrl(ganteng):
+async def babymu(ganteng):
     await ganteng.reply(random.choice(pacar))
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.misi$")
-async def bdrl(ganteng):
+async def babymu(ganteng):
     await ganteng.reply(random.choice(roas))
 
 
-@babymu_cmd(pattern="pung(?: |$)(.*)")
+@poci_cmd(pattern="pung(?: |$)(.*)")
 async def _(event):  
     if event.fwd_from:
         return
