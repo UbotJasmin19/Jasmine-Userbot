@@ -13,7 +13,7 @@ from speedtest import Speedtest
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, StartTime, bot, DEVS
 from userbot.events import register
-from userbot.utils import edit_or_reply, humanbytes, babymu_cmd
+from userbot.utils import edit_or_reply, humanbytes, poci_cmd
 
 absen = [
     "**Hadir Cantik** 😁",
