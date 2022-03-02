@@ -132,7 +132,7 @@ async def _(pong):
 async def Zaen(ganteng):
     await ganteng.reply(random.choice(absen))
 
-@register(incoming=True, from_users=DEVS, pattern=r"^misi$")
+@register(incoming=True, from_users=DEVS, pattern=r"^.misi$")
 async def Zaen(ganteng):
     await ganteng.reply(random.choice(misi))
 
