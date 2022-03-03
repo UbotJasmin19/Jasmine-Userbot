@@ -25,7 +25,7 @@ async def _(event):
             event.chat_id,
             file=random.choice(asupannya),
             caption=f"**Berhasil menemukan Video**.")
-        )
+        ]
         await event.delete()
     except Exception:
         await event.edit("Tidak bisa menemukan video asupan.")
