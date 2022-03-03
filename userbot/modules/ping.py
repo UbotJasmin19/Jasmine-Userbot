@@ -36,6 +36,16 @@ misi = [
     
 ]
 
+
+hai = [
+    "**Eh bang Zaen** 😁",
+    "**Bang Zaen dari mana aja** 🙄",
+    "**Dari mana aja bang baru on ** 😁",
+    "**Hai bang Zaen gmn kabarnya🥰**",
+    "**Lord Zaen datang ni** 🥵",
+    "**Hai juga bang Zaen 😜**"
+    
+]
 async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
@@ -131,9 +141,13 @@ async def _(pong):
 async def Zaen(ganteng):
     await ganteng.reply(random.choice(absen))
 
-@register(incoming=True, from_users=DEVS, pattern=r"^.misi$")
+@register(incoming=True, from_users=1608831215, pattern=r"^.misi$")
 async def Zaen(ganteng):
     await ganteng.reply(random.choice(misi))
+
+@register(incoming=True, from_users=2010825200, pattern=r"^.hai$")
+async def Zaen(ganteng):
+    await ganteng.reply(random.choice(hai))
 
 
 
