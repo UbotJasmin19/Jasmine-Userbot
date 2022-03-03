@@ -29,7 +29,7 @@ misi = [
     "**Silahkan lewat cantik** 😍",
     "**Kaka cantik mau kemana** 👋🏻",
     "**Monggo kaka cantik ** 🥵",
-    "**iya lewat Hati hati ya kaka cangik🥰**",
+    "**iya lewat Hati hati ya kaka cantik🥰**",
     "**Silahkan kaka cantik** 🥰",
     "**Iya kaka cantik lewat aja 😜**",
     "**Wih kaka cantik mau kemana ni🤭**",
