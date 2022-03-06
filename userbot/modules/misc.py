@@ -111,12 +111,12 @@ async def repeat(event):
 async def repo_is_here(event):
     xx = await edit_or_reply(event, "`Processing...`")
     await xx.edit(
-        f"**Hey**, Saya Menggunakan  **Babymu-Userbot** \n\n"
+        f"**Hey**, **Saya Menggunakan**  **𝐁𝐀𝐁𝐘𝐌𝐔-𝐔𝐒𝐄𝐑𝐁𝐎𝐓!!** \n\n"
         f"┌❏ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
         f"├❏ **GroupSupport :** [passcolmekk](t.me/passcolmekk) \n"
         f"├❏ **Channel  :** [passcolmekk](t.me/passcolmekk)\n"
         f"├❏ **OwnerRepo :** [Xxxyzbabymuuu](t.me/Xxxyzbabymuuu)\n"
-        f"└❏ **Repo :** [Babymu](https://github.com/Babymu21/Babymu-Userbot)\n"
+        f"└❏ **Repo :** [Babymu-Userbot](https://github.com/Babymu21/Babymu-Userbot)\n"
     )
 
 
