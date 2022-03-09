@@ -139,7 +139,6 @@ async def _(pong):
     await pong.edit(
         f"⚡ **Ping**  `%sms`\n"
         f"⏳ **BotUptime** `{uptime}` \n"
-        f
 
     )
 
