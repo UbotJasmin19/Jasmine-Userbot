@@ -111,8 +111,7 @@ async def _(pong):
     await ram.edit(
         f"**💥𝗞𝗢𝗡𝗧𝗢𝗟-𝗠𝗘𝗟𝗘𝗗𝗔𝗞💥**\n"
         f"** ➠  Sɪɢɴᴀʟ   :** "
-        f"`%sms` \n"
-        f"** ➠  Bᴏᴛᴠᴇʀ  :** "
+        f"`%sms` \n
         f"** ➠  Uᴘᴛɪᴍᴇ  :** "
         f"`{uptime}` \n"
         f"** ➠  Oᴡɴᴇʀ   :** [{user.first_name}](tg://user?id={user.id})" % (duration)
