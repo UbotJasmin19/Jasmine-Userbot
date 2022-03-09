@@ -139,7 +139,8 @@ async def _(pong):
     await pong.edit(
         f"⚡ **Ping**  `%sms`\n"
         f"⏳ **BotUptime** `{uptime}` \n"
-        f"🤖 **BotOf** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f
+
     )
 
 #  .Coded by Lord-Userbot
