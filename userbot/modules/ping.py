@@ -242,8 +242,6 @@ CMD_HELP.update(
         \n  •  **Function : **Untuk menunjukkan kping userbot.\
         \n\n  •  **Syntax :** `{cmd}rping`\
         \n  •  **Function : **Untuk menunjukkan rping userbot.\
-        \n\n  •  **Syntax :** `{cmd}tping`\
-        \n  •  **Function : **Untuk menunjukkan tping userbot.\
     "
     }
 )
