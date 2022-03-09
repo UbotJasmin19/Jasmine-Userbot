@@ -138,10 +138,11 @@ async def _(pong):
     duration = (end - start).microseconds / 1000
     await pong.edit(
         f"**𖣘 PING** "
-                    f"\n  ➥ `%sms` \n"
-                    f"**𖣘 Kontolll** "
-                    f"\n  ➥ `Oᴡɴᴇʀ   :** [{user.first_name}](tg://user?id={user.id})" % (duration)
-    
+        f"\n  ➥ `%sms` \n"
+        f"** ➠  Uᴘᴛɪᴍᴇ  :** "
+        f"`{uptime}` \n"
+        f"** ➠  Oᴡɴᴇʀ   :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+    )
                  
 
 #  .Coded by Lord-Userbot
