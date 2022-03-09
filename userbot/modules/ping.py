@@ -104,7 +104,6 @@ async def _(pong):
     await ram.edit("**60% ██████▒▒▒▒**")
     await ram.edit("**80% ████████▒▒**")
     await ram.edit("**100% ██████████**")
-    await asyncio.sleep(2)
     await ram.edit("✨")
     await asyncio.sleep(2)
     end = datetime.now()
