@@ -140,9 +140,7 @@ async def _(pong):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     kping = await edit_or_reply(pong, "8✊===D")
-    await kping.edit("8==✊=D")
     await kping.edit("8=✊==D")
-    await kping.edit("8==✊=D")
     await kping.edit("8==✊=D")
     await kping.edit("8===✊D")
     await kping.edit("8==✊=D")
@@ -159,15 +157,12 @@ async def _(pong):
     await kping.edit("8===✊D")
     await kping.edit("8===✊D💦")
     await kping.edit("8====D💦💦")
-    await kping.edit("**CROOTTTT PINGGGG! Kotolll!!!**")
+    await kping.edit("**CROOTTTT KONTOLLL PINGGGG!**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await kping.edit(
-        f"**NGENTOT!! 🐨**\n**KAMPANG** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**KONTOllll NGENTOT!!!  🐨**\n**KAMPANG** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
-
-
-# .keping & kping Coded by Koala
 
 
 @poci_cmd(pattern="keping$")
