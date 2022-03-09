@@ -113,7 +113,7 @@ async def _(pong):
         f"** ➠  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ➠  Bᴏᴛᴠᴇʀ  :** "
-        f"`{BOT_VER}` \n"
+        f"`BotUptime** `{uptime}` \n"
         f"** ➠  Uᴘᴛɪᴍᴇ  :** "
         f"`{uptime}` \n"
         f"** ➠  Oᴡɴᴇʀ   :** [{user.first_name}](tg://user?id={user.id})" % (duration)
