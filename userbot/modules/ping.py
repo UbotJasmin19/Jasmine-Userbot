@@ -140,7 +140,8 @@ async def _(pong):
         f"**𖣘 PING** "
                     f"\n  ➥ `%sms` \n"
                     f"**𖣘 Kontolll** "
-                    f"\n  ➥ `{ALIVE_NAME}` \n" % (duration))
+                    f"\n  ➥ `Oᴡɴᴇʀ   :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+    
                  
 
 #  .Coded by Lord-Userbot
