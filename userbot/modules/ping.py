@@ -105,7 +105,6 @@ async def _(pong):
     await ram.edit("**80% ████████▒▒**")
     await ram.edit("**100% ██████████**")
     await ram.edit("✨")
-    await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
