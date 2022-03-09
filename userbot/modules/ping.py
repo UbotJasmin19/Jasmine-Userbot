@@ -140,7 +140,7 @@ async def _(pong):
                     f"\n  ➥ `%sms` \n"
                     f"**𖣘 Kontolll** "
                     f"\n  ➥ `{ALIVE_NAME}` \n" % (duration))
-                )
+              )
 
 
 #  .Coded by Lord-Userbot
