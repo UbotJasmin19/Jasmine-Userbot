@@ -92,6 +92,37 @@ async def _(ping):
         f"🤖 **BotOf** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
+@poci_cmd(pattern="rping$")
+async def _(pong):
+    """For .ping command, ping the userbot from any chat."""
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    ram = await edit_or_reply(pong, "**Mengecek Sinyal...**")
+    await ram.edit("**0% ▒▒▒▒▒▒▒▒▒▒**")
+    await ram.edit("**20% ██▒▒▒▒▒▒▒▒**")
+    await ram.edit("**40% ████▒▒▒▒▒▒**")
+    await ram.edit("**60% ██████▒▒▒▒**")
+    await ram.edit("**80% ████████▒▒**")
+    await ram.edit("**100% ██████████**")
+    await asyncio.sleep(2)
+    await ram.edit("✨")
+    await asyncio.sleep(2)
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    user = await pong.client.get_me()
+    await ram.edit(
+        f"**🌟𝗞𝗢𝗡𝗧𝗢𝗟-𝗠𝗘𝗟𝗘𝗗𝗔𝗞🌟**\n"
+        f"** ➠  Sɪɢɴᴀʟ   :** "
+        f"`%sms` \n"
+        f"** ➠  Bᴏᴛᴠᴇʀ  :** "
+        f"`{BOT_VER}` \n"
+        f"** ➠  Uᴘᴛɪᴍᴇ  :** "
+        f"`{uptime}` \n"
+        f"** ➠  Oᴡɴᴇʀ   :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+    )
+
+#  .Ceded by Ramadhani RAM-UBOT
+
 
 @poci_cmd(pattern="speedtest$")
 async def _(speed):
@@ -214,6 +245,8 @@ CMD_HELP.update(
         \n  •  **Function : **Sama seperti perintah ping\
         \n\n  •  **Syntax :** `{cmd}kping`\
         \n  •  **Function : **Untuk menunjukkan kping userbot.\
+        \n\n  •  **Syntax :** `{cmd}rping`\
+        \n  •  **Function : **Untuk menunjukkan rping userbot.\
     "
     }
 )
