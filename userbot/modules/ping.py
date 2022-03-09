@@ -136,15 +136,13 @@ async def _(pong):
     await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (\n              \\  ")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**𖣘 PING** "
+    await pong.edit(
+        f"**𖣘 PING** "
                     f"\n  ➥ `%sms` \n"
                     f"**𖣘 Kontolll** "
                     f"\n  ➥ `{ALIVE_NAME}` \n" % (duration))
               )
-
-
 #  .Coded by Lord-Userbot
-
 
 @poci_cmd(pattern="speedtest$")
 async def _(speed):
