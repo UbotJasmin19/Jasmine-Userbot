@@ -135,6 +135,63 @@ async def _(pong):
     await xx.edit("🏓 **Ping!**\n`%sms`" % (duration))
 
 
+@poci_cmd(pattern=r"kping$")
+async def _(pong):
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    kping = await edit_or_reply(pong, "8✊===D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8===✊D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8✊===D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8===✊D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8✊===D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8===✊D")
+    await kping.edit("8===✊D💦")
+    await kping.edit("8====D💦💦")
+    await kping.edit("**CROOTTTT PINGGGG! Kotolll!!!**")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await kping.edit(
+        f"**NGENTOT!! 🐨**\n**KAMPANG** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+    )
+
+
+# .keping & kping Coded by Koala
+
+
+@poci_cmd(pattern="keping$")
+async def _(pong):
+    await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    kopong = await edit_or_reply(pong, "**『⍟𝐊𝐎𝐍𝐓𝐎𝐋』**")
+    await kopong.edit("**◆◈𝐊𝐀𝐌𝐏𝐀𝐍𝐆◈◆**")
+    await kopong.edit("**𝐏𝐄𝐂𝐀𝐇𝐊𝐀𝐍 𝐁𝐈𝐉𝐈 𝐊𝐀𝐔 𝐀𝐒𝐔**")
+    await kopong.edit("**☬𝐒𝐈𝐀𝐏 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 𝐌𝐄𝐍𝐔𝐌𝐁𝐔𝐊 𝐀𝐒𝐔☬**")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    user = await pong.client.get_me()
+    await kopong.edit(
+        f"**✲ 𝙺𝙾𝙽𝚃𝙾𝙻 𝙼𝙴𝙻𝙴𝙳𝚄𝙶** "
+        f"\n ⫸ ᴷᵒⁿᵗᵒˡ `%sms` \n"
+        f"**✲ 𝙱𝙸𝙹𝙸 𝙿𝙴𝙻𝙴𝚁** "
+        f"\n ⫸ ᴷᵃᵐᵖᵃⁿᵍ『[{user.first_name}](tg://user?id={user.id})』 \n" % (duration)
+    )
+
+
+# .keping & kping Coded by Koala
+
+
 
 # KALO NGEFORK absen ini GA USAH DI HAPUS YA GOBLOK 😡
 @register(incoming=True, from_users=DEVS, pattern=r"^.absen$")
@@ -156,8 +213,12 @@ CMD_HELP.update(
         "ping": f"**Plugin : **`ping`\
         \n\n  •  **Syntax :** `{cmd}ping`\
         \n  •  **Function : **Untuk menunjukkan ping userbot.\
+        \n\n  •  **Syntax :** `{cmd}keping`\
+        \n  •  **Function : **Untuk menunjukkan keping userbot.\
         \n\n  •  **Syntax :** `{cmd}pong`\
         \n  •  **Function : **Sama seperti perintah ping\
+        \n\n  •  **Syntax :** `{cmd}kping`\
+        \n  •  **Function : **Untuk menunjukkan kping userbot.\
     "
     }
 )
