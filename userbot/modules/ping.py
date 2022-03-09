@@ -119,6 +119,32 @@ async def _(pong):
 
 #  .Coded by Ramadhani RAM-UBOT
 
+@poci_cmd(pattern="tping$")
+async def_(pong):
+    """ For .ping command, ping the userbot from any chat.  """
+    await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await pong.edit(".                       /¯ )")
+    await pong.edit(".                       /¯ )\n                      /¯  /")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ ")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (")
+    await pong.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (\n              \\  ")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await pong.edit(f"**𖣘 PING** "
+                    f"\n  ➥ `%sms` \n"
+                    f"**𖣘 Kontolll** "
+                    f"\n  ➥ `{ALIVE_NAME}` \n" % (duration))
+                )
+
+
+#  .Coded by Lord-Userbot
+
 
 @poci_cmd(pattern="speedtest$")
 async def _(speed):
@@ -243,6 +269,8 @@ CMD_HELP.update(
         \n  •  **Function : **Untuk menunjukkan kping userbot.\
         \n\n  •  **Syntax :** `{cmd}rping`\
         \n  •  **Function : **Untuk menunjukkan rping userbot.\
+        \n\n  •  **Syntax :** `{cmd}tping`\
+        \n  •  **Function : **Untuk menunjukkan tping userbot.\
     "
     }
 )
