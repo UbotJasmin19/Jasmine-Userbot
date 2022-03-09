@@ -121,7 +121,7 @@ async def _(pong):
         f"** ➠  Oᴡɴᴇʀ   :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
-#  .Ceded by Ramadhani RAM-UBOT
+#  .Coded by Ramadhani RAM-UBOT
 
 
 @poci_cmd(pattern="speedtest$")
