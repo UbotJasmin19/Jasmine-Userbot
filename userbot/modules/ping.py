@@ -137,13 +137,10 @@ async def _(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**𖣘 PING** "
-        f"\n  ➥ `%sms` \n"
-        f"** ➠  Uᴘᴛɪᴍᴇ  :** "
-        f"`{uptime}` \n"
-        f"** ➠  Oᴡɴᴇʀ   :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"⚡ **Ping**  `%sms`\n"
+        f"⏳ **BotUptime** `{uptime}` \n"
+        f"🤖 **BotOf** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
-                 
 
 #  .Coded by Lord-Userbot
 
