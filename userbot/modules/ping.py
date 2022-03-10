@@ -124,7 +124,7 @@ async def _(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("⚡")
+    await pong.edit("**Jamet**")
     await pong.edit("__**Jamet⚡**__")
     await pong.edit("__**jame⚡t**__")
     await pong.edit("__**jam⚡et**__")
@@ -138,6 +138,8 @@ async def _(pong):
         f"`%sms` \n"
         f"⚡ **ᴏɴʟɪɴᴇ:** "
         f"`{uptime}` \n" % (duration))
+
+#  .Coded by alvin Lord-Userbot
 
 
 @poci_cmd(pattern="speedtest$")
