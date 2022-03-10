@@ -119,6 +119,27 @@ async def _(pong):
 
 #  .Coded by Ramadhani RAM-UBOT
 
+@poci_cmd(pattern="tping$")
+async def _(pong):
+    """ For .ping command, ping the userbot from any chat.  """
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await pong.edit("⚡")
+    await pong.edit("__**Jamet⚡**__")
+    await pong.edit("__**jame⚡t**__")
+    await pong.edit("__**jam⚡et**__")
+    await pong.edit("__**j⚡amet**__")
+    await pong.edit("__**⚡Jamet⚡**__")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await pong.edit(
+        f"**⚡Jamet ᴘɪɴɢ⚡**\n"
+        f"⚡ **ᴘɪɴɢ:** "
+        f"`%sms` \n"
+        f"⚡ **ᴏɴʟɪɴᴇ:** "
+        f"`{uptime}` \n" % (duration))
+
+
 @poci_cmd(pattern="speedtest$")
 async def _(speed):
     """For .speedtest command, use SpeedTest to check server speeds."""
@@ -242,6 +263,8 @@ CMD_HELP.update(
         \n  •  **Function : **Untuk menunjukkan kping userbot.\
         \n\n  •  **Syntax :** `{cmd}rping`\
         \n  •  **Function : **Untuk menunjukkan rping userbot.\
+        \n\n  •  **Syntax :** `{cmd}tping`\
+        \n  •  **Function : **Untuk menunjukkan tping userbot.\
     "
     }
 )
