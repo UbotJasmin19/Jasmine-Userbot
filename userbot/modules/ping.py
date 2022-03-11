@@ -145,12 +145,12 @@ async def _(pong):
 async def _(pong):
     """ For .ping command, ping the userbot from any chat.  """
     start = datetime.now()
-    await pong.edit("`Pong.....🔨`")
-    await pong.edit("`Pong....🔨.`")
-    await pong.edit("`Pong...🔨..`")
-    await pong.edit("`Pong..🔨...`")
-    await pong.edit("`Pong.🔨....`")
-    await pong.edit("`Pong🔨.....`")
+    await pong.edit("`Pong.....🚑`")
+    await pong.edit("`Pong....🚒.`")
+    await pong.edit("`Pong...🚑..`")
+    await pong.edit("`Pong..🚒...`")
+    await pong.edit("`Pong.🚑....`")
+    await pong.edit("`Pong🚒.....`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
     await pong.edit("✘ **Ping!**\n`%sms`" % (duration))
