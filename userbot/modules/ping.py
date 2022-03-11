@@ -141,6 +141,21 @@ async def _(pong):
 
 #  .Coded by alvin Lord-Userbot
 
+@poci_cmd(pattern="fping$")
+async def _(pong):
+    """ For .ping command, ping the userbot from any chat.  """
+    start = datetime.now()
+    await pong.edit("`Pong.....🔨`")
+    await pong.edit("`Pong....🔨.`")
+    await pong.edit("`Pong...🔨..`")
+    await pong.edit("`Pong..🔨...`")
+    await pong.edit("`Pong.🔨....`")
+    await pong.edit("`Pong🔨.....`")
+    end = datetime.now()
+    duration = (end - start).microseconds / 9000
+    await pong.edit("✘ **Ping!**\n`%sms`" % (duration))
+
+#  .Coded by alvin Lord-Userbot
 
 @poci_cmd(pattern="speedtest$")
 async def _(speed):
@@ -267,6 +282,8 @@ CMD_HELP.update(
         \n  •  **Function : **Untuk menunjukkan rping userbot.\
         \n\n  •  **Syntax :** `{cmd}tping`\
         \n  •  **Function : **Untuk menunjukkan tping userbot.\
+        \n\n  •  **Syntax :** `{cmd}fping`\
+        \n  •  **Function : **Untuk menunjukkan fping userbot.\
     "
     }
 )
