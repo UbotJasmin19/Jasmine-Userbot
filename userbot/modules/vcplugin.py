@@ -141,11 +141,11 @@ async def vc_play(event):
     ):
         return await edit_or_reply(event, "**Silahkan Masukan Judul Lagu**")
     elif replied and not replied.audio and not replied.voice or not replied:
-        geezav = await edit_or_reply(event, "`Searching...`")
+        botman = await edit_or_reply(event, "`Searching...`")
         query = event.text.split(maxsplit=1)[1]
         search = ytsearch(query)
         if search == 0:
-            await geezav.edit(
+            await botman.edit(
                 "**Lagu Tidak DiTemukan.** Coba cari dengan Judul yang Lebih Tepat!!!"
             )
         else:
@@ -161,11 +161,11 @@ async def vc_play(event):
             format = "best[height<=?720][width<=?1280]"
             hm, ytlink = await ytdl(format, url)
             if hm == 0:
-                await geezav.edit(f"`{ytlink}`")
+                await botman.edit(f"`{ytlink}`")
             elif chat_id in QUEUE:
                 pos = add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                 caption = f"💡 **Song Added To queue »** `#{pos}`\n\n**🏷 Title :** [{songname}]({url})\n**⏱ Duration :** `{duration}`\n💌 **Request By :** {from_user}"
-                await geezav.delete()
+                await botman.delete()
                 await event.client.send_file(
                     chat_id, thumb, caption=caption, reply_to=event.reply_to_msg_id
                 )
@@ -181,13 +181,13 @@ async def vc_play(event):
                     )
                     add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                     caption = f"🏷 **Title :** [{songname}]({url})\n**⏱ Duration :** `{duration}`\n💡 **Status :** `Playing`\n💌 **Request By :** {from_user}"
-                    await geezav.delete()
+                    await botman.delete()
                     await event.client.send_file(
                         chat_id, thumb, caption=caption, reply_to=event.reply_to_msg_id
                     )
                 except Exception as ep:
                     clear_queue(chat_id)
-                    await geezav.edit(f"`{ep}`")
+                    await botman.edit(f"`{ep}`")
 
     else:
         await edit_or_reply(event, "📥 **Prosess Dimulai!!!**")
@@ -203,7 +203,7 @@ async def vc_play(event):
             await event.client.send_file(
                 chat_id, ngantri, caption=caption, reply_to=event.reply_to_msg_id
             )
-            await geezav.delete()
+            await botman.delete()
         else:
             try:
                 await call_py.join_group_call(
@@ -219,10 +219,10 @@ async def vc_play(event):
                 await event.client.send_file(
                     chat_id, fotoplay, caption=caption, reply_to=event.reply_to_msg_id
                 )
-                await geezav.delete()
+                await botman.delete()
             except Exception as ep:
                 clear_queue(chat_id)
-                await geezav.edit(f"`{ep}`")
+                await botman.edit(f"`{ep}`")
 
 
 @poci_cmd(pattern="vplay(?:\s|$)([\s\S]*)")
@@ -483,7 +483,7 @@ async def vc_volume(event):
 
 @poci_cmd(pattern="joinvc(?: |$)(.*)")
 async def join_(event):
-    geezav = await edit_or_reply(event, f"**Processing**")
+    botman = await edit_or_reply(event, f"**Processing**")
     if len(event.text.split()) > 1:
         chat = event.text.split()[1]
         try:
@@ -494,7 +494,7 @@ async def join_(event):
             await call_py.leave_group_call(chat)
             await asyncio.sleep(3)
         except Exception as e:
-            return await geezav.delete(f'Error during Joining the Call\n`{e}`')
+            return await botman.delete(f'Error during Joining the Call\n`{e}`')
     else:
         chat = event.chat_id
         from_user = vcmention(event.sender)
@@ -507,13 +507,13 @@ async def join_(event):
         ),
         stream_type=StreamType().pulse_stream,
     )
-    await geezav.edit(f"**{from_user} Join the voice chat!**")
+    await botman.edit(f"**{from_user} Join the voice chat!**")
 
 
 @poci_cmd(pattern="leavevc(?: |$)(.*)")
 async def leavevc(event):
     """ leave video chat """
-    geezav = await edit_or_reply(event, "Processing")
+    botman = await edit_or_reply(event, "Processing")
     chat_id = event.chat_id
     from_user = vcmention(event.sender)
     if from_user:
@@ -521,9 +521,9 @@ async def leavevc(event):
             await call_py.leave_group_call(chat_id)
         except (NotInGroupCallError, NoActiveGroupCall):
             pass
-        await geezav.edit(f"**{from_user} Leaving Voice Chat.**")
+        await botman.edit(f"**{from_user} Leaving Voice Chat.**")
     else:
-        await geezav.delete(f"**Maaf {from_user} Not In VC Group**")
+        await botman.delete(f"**Maaf {from_user} Not In VC Group**")
 
 
 @poci_cmd(pattern="playlist$")
