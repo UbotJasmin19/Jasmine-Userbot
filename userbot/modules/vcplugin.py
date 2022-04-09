@@ -431,6 +431,78 @@ async def vc_volume(event):
         await edit_delete(event, "**Tidak Sedang Memutar Streaming**")
 
 
+# credits by @vckyaz < vicky \>
+# FROM GeezProjects < https://github.com/vckyou/GeezProjects \>
+# ambil boleh apus credits jangan ya ka:)
+
+
+@poci_cmd(pattern="joinvc(?: |$)(.*)")
+async def join_(event):
+    xnxx = await edit_or_reply(event, f"**Processing**")
+    if len(event.text.split()) > 1:
+        chat = event.text.split()[1]
+        try:
+            chat = await event.client(GetFullUserRequest(chat))
+        except Exception as e:
+            await edit_delete(event, f"**ERROR:** `{e}`", 30)
+    else:
+        chat = event.chat_id
+        vcmention(event.sender)
+    if not call_py.is_connected:
+        await call_py.start()
+    await call_py.join_group_call(
+        chat,
+        AudioPiped("http://duramecho.com/Misc/SilentCd/Silence01s.mp3"),
+        stream_type=StreamType().pulse_stream,
+    )
+    try:
+        await xnxx.edit("**{}** `Joined VC in` `{}`".format(owner, str(event.chat_id)))
+    except Exception as ex:
+        await edit_delete(event, f"**ERROR:** `{ex}`")
+
+
+@poci_cmd(pattern="leavevc(?: |$)(.*)")
+async def leavevc(event):
+    """leave video chat"""
+    xnxx = await edit_or_reply(event, "Processing")
+    chat_id = event.chat_id
+    from_user = vcmention(event.sender)
+    if from_user:
+        try:
+            await call_py.leave_group_call(chat_id)
+        except (NotInGroupCallError, NoActiveGroupCall):
+            pass
+        await xnxx.edit(
+            "**{}** `Left the voice in` `{}`".format(owner, str(event.chat_id))
+        )
+    else:
+        await edit_delete(event, f"**Maaf {owner} Tidak di VCG**")
+
+
+@poci_cmd(pattern="playlist$")
+async def vc_playlist(event):
+    chat_id = event.chat_id
+    if chat_id in QUEUE:
+        chat_queue = get_queue(chat_id)
+        if len(chat_queue) == 1:
+            await edit_or_reply(
+                event,
+                f"**🎧 Sedang Memutar:**\n• [{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}`",
+                link_preview=False,
+            )
+        else:
+            PLAYLIST = f"**🎧 Sedang Memutar:**\n**• [{chat_queue[0][0]}]({chat_queue[0][2]})** | `{chat_queue[0][3]}` \n\n**• Daftar Putar:**"
+            l = len(chat_queue)
+            for x in range(1, l):
+                hmm = chat_queue[x][0]
+                hmmm = chat_queue[x][2]
+                hmmmm = chat_queue[x][3]
+                PLAYLIST = PLAYLIST + "\n" + f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`"
+            await edit_or_reply(event, PLAYLIST, link_preview=False)
+    else:
+        await edit_delete(event, "**Tidak Sedang Memutar Streaming**")
+
+
 @call_py.on_stream_end()
 async def stream_end_handler(_, u: Update):
     chat_id = u.chat_id
