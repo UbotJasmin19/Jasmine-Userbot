@@ -17,7 +17,7 @@ from telethon.utils import get_display_name
 from youtubesearchpython import VideosSearch
 
 from userbot import CMD_HANDLER as cmd
-from userbot import CMD_HELP
+from userbot import CMD_HELP,call_py
 from userbot import PLAY_PIC as fotoplay
 from userbot import QUEUE_PIC as ngantri
 from userbot import call_py, owner
@@ -437,46 +437,64 @@ async def vc_volume(event):
 
 
 @poci_cmd(pattern="joinvc(?: |$)(.*)")
-async def join_(event):
-    xnxx = await edit_or_reply(event, f"**Processing**")
+@register(pattern=r"^\.joinvcs(?: |$)(.*)", sudo=True)
+async def _(event):
+    Man = await edit_or_reply(event, "`Processing...`")
     if len(event.text.split()) > 1:
-        chat = event.text.split()[1]
+        chat_id = event.text.split()[1]
         try:
-            chat = await event.client(GetFullUserRequest(chat))
+            chat_id = await event.client.get_peer_id(int(chat_id))
         except Exception as e:
-            await edit_delete(event, f"**ERROR:** `{e}`", 30)
+            return await Man.edit(f"**ERROR:** `{e}`")
     else:
-        chat = event.chat_id
-        vcmention(event.sender)
-    if not call_py.is_connected:
-        await call_py.start()
-    await call_py.join_group_call(
-        chat,
-        AudioPiped("http://duramecho.com/Misc/SilentCd/Silence01s.mp3"),
-        stream_type=StreamType().pulse_stream,
-    )
-    try:
-        await xnxx.edit("**{}** `Joined VC in` `{}`".format(owner, str(event.chat_id)))
-    except Exception as ex:
-        await edit_delete(event, f"**ERROR:** `{ex}`")
+        chat_id = event.chat_id
+    file = "./userbot/resources/audio-man.mp3"
+    if chat_id:
+        try:
+            await call_py.join_group_call(
+                chat_id,
+                InputStream(
+                    InputAudioStream(
+                        file,
+                    ),
+                ),
+                stream_type=StreamType().local_stream,
+            )
+            await Man.edit(
+                f"❏ **Berhasil Join Ke Obrolan Suara**\n└ **Chat ID:** `{chat_id}`"
+            )
+        except AlreadyJoinedError:
+            await call_py.leave_group_call(chat_id)
+            await edit_delete(
+                Man,
+                "**ERROR:** `Karena akun sedang berada di obrolan suara`\n\n• Silahkan coba `.joinvc` lagi",
+                45,
+            )
+        except Exception as e:
+            await Man.edit(f"**INFO:** `{e}`")
 
 
 @poci_cmd(pattern="leavevc(?: |$)(.*)")
-async def leavevc(event):
-    """leave video chat"""
-    xnxx = await edit_or_reply(event, "Processing")
-    chat_id = event.chat_id
-    from_user = vcmention(event.sender)
-    if from_user:
+@register(pattern=r"^\.leavevcs(?: |$)(.*)", sudo=True)
+async def vc_end(event):
+    Man = await edit_or_reply(event, "`Processing...`")
+    if len(event.text.split()) > 1:
+        chat_id = event.text.split()[1]
+        try:
+            chat_id = await event.client.get_peer_id(int(chat_id))
+        except Exception as e:
+            return await Man.edit(f"**ERROR:** `{e}`")
+    else:
+        chat_id = event.chat_id
+    if chat_id:
         try:
             await call_py.leave_group_call(chat_id)
-        except (NotInGroupCallError, NoActiveGroupCall):
-            pass
-        await xnxx.edit(
-            "**{}** `Left the voice in` `{}`".format(owner, str(event.chat_id))
-        )
-    else:
-        await edit_delete(event, f"**Maaf {owner} Tidak di VCG**")
+            await edit_delete(
+                Man,
+                f"❏ **Berhasil Turun dari Obrolan Suara**\n└ **Chat ID:** `{chat_id}`",
+            )
+        except Exception as e:
+            await Man.edit(f"**INFO:** `{e}`")
 
 
 @poci_cmd(pattern="playlist$")
