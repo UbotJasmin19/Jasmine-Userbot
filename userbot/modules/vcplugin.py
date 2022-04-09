@@ -17,7 +17,7 @@ from telethon.utils import get_display_name
 from youtubesearchpython import VideosSearch
 
 from userbot import CMD_HANDLER as cmd
-from userbot import CMD_HELP,call_py
+from userbot import CMD_HELP
 from userbot import PLAY_PIC as fotoplay
 from userbot import QUEUE_PIC as ngantri
 from userbot import call_py, owner
@@ -427,96 +427,6 @@ async def vc_volume(event):
             )
         except Exception as e:
             await edit_delete(event, f"**ERROR:** `{e}`", 30)
-    else:
-        await edit_delete(event, "**Tidak Sedang Memutar Streaming**")
-
-
-# credits by @vckyaz < vicky \>
-# FROM GeezProjects < https://github.com/vckyou/GeezProjects \>
-# ambil boleh apus credits jangan ya ka:)
-
-
-@poci_cmd(pattern="joinvc(?: |$)(.*)")
-@register(pattern=r"^\.joinvcs(?: |$)(.*)", sudo=True)
-async def _(event):
-    Man = await edit_or_reply(event, "`Processing...`")
-    if len(event.text.split()) > 1:
-        chat_id = event.text.split()[1]
-        try:
-            chat_id = await event.client.get_peer_id(int(chat_id))
-        except Exception as e:
-            return await Man.edit(f"**ERROR:** `{e}`")
-    else:
-        chat_id = event.chat_id
-    file = "./userbot/resources/audio-man.mp3"
-    if chat_id:
-        try:
-            await call_py.join_group_call(
-                chat_id,
-                InputStream(
-                    InputAudioStream(
-                        file,
-                    ),
-                ),
-                stream_type=StreamType().local_stream,
-            )
-            await Man.edit(
-                f"❏ **Berhasil Join Ke Obrolan Suara**\n└ **Chat ID:** `{chat_id}`"
-            )
-        except AlreadyJoinedError:
-            await call_py.leave_group_call(chat_id)
-            await edit_delete(
-                Man,
-                "**ERROR:** `Karena akun sedang berada di obrolan suara`\n\n• Silahkan coba `.joinvc` lagi",
-                45,
-            )
-        except Exception as e:
-            await Man.edit(f"**INFO:** `{e}`")
-
-
-@poci_cmd(pattern="leavevc(?: |$)(.*)")
-@register(pattern=r"^\.leavevcs(?: |$)(.*)", sudo=True)
-async def vc_end(event):
-    Man = await edit_or_reply(event, "`Processing...`")
-    if len(event.text.split()) > 1:
-        chat_id = event.text.split()[1]
-        try:
-            chat_id = await event.client.get_peer_id(int(chat_id))
-        except Exception as e:
-            return await Man.edit(f"**ERROR:** `{e}`")
-    else:
-        chat_id = event.chat_id
-    if chat_id:
-        try:
-            await call_py.leave_group_call(chat_id)
-            await edit_delete(
-                Man,
-                f"❏ **Berhasil Turun dari Obrolan Suara**\n└ **Chat ID:** `{chat_id}`",
-            )
-        except Exception as e:
-            await Man.edit(f"**INFO:** `{e}`")
-
-
-@poci_cmd(pattern="playlist$")
-async def vc_playlist(event):
-    chat_id = event.chat_id
-    if chat_id in QUEUE:
-        chat_queue = get_queue(chat_id)
-        if len(chat_queue) == 1:
-            await edit_or_reply(
-                event,
-                f"**🎧 Sedang Memutar:**\n• [{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}`",
-                link_preview=False,
-            )
-        else:
-            PLAYLIST = f"**🎧 Sedang Memutar:**\n**• [{chat_queue[0][0]}]({chat_queue[0][2]})** | `{chat_queue[0][3]}` \n\n**• Daftar Putar:**"
-            l = len(chat_queue)
-            for x in range(1, l):
-                hmm = chat_queue[x][0]
-                hmmm = chat_queue[x][2]
-                hmmmm = chat_queue[x][3]
-                PLAYLIST = PLAYLIST + "\n" + f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`"
-            await edit_or_reply(event, PLAYLIST, link_preview=False)
     else:
         await edit_delete(event, "**Tidak Sedang Memutar Streaming**")
 
