@@ -4,7 +4,7 @@
 </p>
 
 
-Babymu-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
+𝐉𝐀𝐒𝐌𝐈𝐍𝐄-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 
 Berbasis [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
 Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.
