@@ -2,7 +2,7 @@
   "name": "𝐉𝐀𝐒𝐌𝐈𝐍𝐄-𝐔𝐒𝐄𝐑𝐁𝐎𝐓",
   "description": "[𝐉𝐀𝐒𝐌𝐈𝐍𝐄-𝐔𝐒𝐄𝐑𝐁𝐎𝐓] userbot Telegram modular yang berjalan pada Python 3.9+",
   "logo": "https://telegra.ph/file/ca027ad077a7ceecf3403.jpg",
-  "keywords": ["telegram", "userbot", "Babymu-Userbot", "modular", "python"],
+  "keywords": ["telegram", "userbot", "Jasmine-Userbot", "modular", "python"],
   "repository": "https://github.com/UbotJasmin19/Jasmine-Userbot",
   "stack": "container",
   "env": {
@@ -23,7 +23,7 @@
       "required": false
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di Grup » https://t.me/PocongUserbot » Lalu ketik #string",
+      "description": "Dapatkan String Session di Grup » https://t.me/StringManRobot » Lalu ketik #string",
       "required": true
     },
     "HEROKU_APP_NAME": {
